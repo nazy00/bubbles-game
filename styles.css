@@ -1,0 +1,38 @@
+map:hover {
+    cursor: pointer;
+}
+
+#MainMap{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+}
+
+.LRButton{
+    width: 10%;
+    height: 10%;
+}
+
+/*Drag Test (Source: https://jsfiddle.net/jFQEW/4/)*/
+body {
+    overflow: hidden;
+}
+#main {
+    width:3000px; /*Must be 5770px*/
+}
+.square {
+    width:60px;
+    height:60px;
+    background-color: #969696;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.left {
+    float:left;
+}

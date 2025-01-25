@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>NJ-GameJam2025</title>
+</head>
+<body>
+    <!--Map (Demensions: 5760 X 3240)-->
+    <div id="main">
+      <img src="MapTest.png" width="2990" height="1295" usemap="#purple" usemap="#yellow" usemap="#blue"> <!--OG dimensions: 1500 X 650-->
+      <map name="purple">
+        <area shape="rect" coords="798, 235, 855, 355" onclick="alert('Mission 1 Complete!!')" />
+      <map name="yellow">
+        <area shape="rect" coords="898, 205, 935, 355" onclick="alert('Mission 2 Complete!!')" />
+      <map name="blue">
+        <area shape="rect" coords="468, 305, 520, 355" onclick="alert('Mission 3 Complete!!')" />
+      </map>
+    </div>
+
+    <!--Character Carousel-->
+    <footer class="pt-2 pb-2">
+      <div class="container"> <!--Main container-->
+          <div class="row">
+              <div class="col-3 text-right">
+                  <a class="btn mb-3 mr-1" href="#carouselExample" role="button" data-slide="prev">
+                      <!--<i class="fa fa-arrow-left"></i>-->
+                      <img src="LeftArrow.png">
+                  </a>    <!--Change left arrow icon-->
+              </div>
+              <div class="col-6"> <!--Carousel container-->
+                  <div id="carouselExample" class="carousel slide"> <!--Scroll timer: data-ride="carousel"-->
+
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Black.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid"  alt="100%x280" src="Blue.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Green.png">
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Grey.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Orange.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Purple.png">
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Red.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="White.png">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="Yellow.png">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-3 text-left">
+                  <a class="btn mb-3" href="#carouselExample" role="button" data-slide="next">
+                  <!-- <i class="fa fa-arrow-right"></i> -->
+                   <img src="RightArrow.png">
+                  </a>    <!--Change right arrow icon-->
+              </div>
+          </div>
+      </div>
+    </footer>
+
+  <!--Javascript Dependencies-->
+  <script src="./index.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Carousel Dependencies-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
